@@ -23,6 +23,13 @@ const Home = () => {
     console.log(dog);
   };
 
+  const syntaxErrorCode = `
+  JSON.parse("[1, 2, 3, 4,]");
+  `;
+  const syntaxError = () => {
+    JSON.parse("[1, 2, 3, 4,]");
+  }
+
   const evalErrorCode = `
   eval("function baz() { var foo; foo.leftPad(); } baz();")
   `;
@@ -79,6 +86,11 @@ const Home = () => {
           <h3>2. Reference Error</h3>
           <pre>{referenceErrorCode}</pre>
           <Button onClick={referenceError}>Click to get error</Button>
+        </Card>
+        <Card>
+          <h3>3. Syntax Error</h3>
+          <pre>{syntaxErrorCode}</pre>
+          <Button onClick={syntaxError}>Click to get error</Button>
         </Card>
         <Card>
           <h3>4. Type Error</h3>
