@@ -75,7 +75,7 @@ jobs:
       - name: Sentry Release
         uses: getsentry/action-release@v1.2.1
         env:
-          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_AUTH_TOKEN: 5e5d9c8fb3864b81a6728e9de9674edf1851302a02864224929c80646de1c2b6
           SENTRY_ORG: antara-ok
           SENTRY_PROJECT: javascript-nextjs
           SENTRY_URL: https://sentry.io/
