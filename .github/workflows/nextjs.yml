@@ -79,6 +79,7 @@ jobs:
           SENTRY_ORG: antara-ok
           SENTRY_PROJECT: javascript-nextjs
           SENTRY_URL: https://sentry.io/
+          SENTRY_LOG_LEVEL: debug
         with:
           environment: production
       - name: Build with Next.js
